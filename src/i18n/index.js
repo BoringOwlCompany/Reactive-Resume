@@ -1,28 +1,59 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-
 import resources from './locales';
 
 const languages = [
   {
-    code: 'zh',
-    name: 'Chinese',
+    code: 'ar',
+    name: 'Arabic (عربى)',
+  },
+  {
+    code: 'da',
+    name: 'Danish (Dansk)',
+  },
+  {
+    code: 'nl',
+    name: 'Dutch (Nederlands)',
   },
   {
     code: 'en',
-    name: 'English',
+    name: 'English (US)',
+  },
+  {
+    code: 'fi',
+    name: 'Finnish (Suomalainen)',
   },
   {
     code: 'fr',
-    name: 'French',
+    name: 'French (Français)',
   },
   {
-    code: 'hi',
-    name: 'Hindi',
+    code: 'de',
+    name: 'German (Deutsche)',
+  },
+  {
+    code: 'ja',
+    name: 'Japanese (日本人)',
   },
   {
     code: 'kn',
-    name: 'Kannada',
+    name: 'Kannada (ಕನ್ನಡ)',
+  },
+  {
+    code: 'nb',
+    name: 'Norwegian (Norsk)',
+  },
+  {
+    code: 'ptBr',
+    name: 'Portuguese (Brazilian)',
+  },
+  {
+    code: 'es',
+    name: 'Spanish (Español)',
+  },
+  {
+    code: 'tr',
+    name: 'Turkish (Türkçe)',
   },
 ];
 
@@ -30,8 +61,6 @@ i18n.use(initReactI18next).init({
   resources,
   lng: 'en',
   fallbackLng: 'en',
-  ns: ['app', 'leftSidebar', 'rightSidebar'],
-  defaultNS: 'app',
 });
 
 export { languages };
